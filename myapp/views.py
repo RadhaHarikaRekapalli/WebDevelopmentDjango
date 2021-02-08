@@ -24,3 +24,18 @@ def external(request):
 	return render(request,'student/demo2.html')
 def bootstrapexp(request):
 	return render(request,'student/bootstrapexp.html')
+def login(request):
+	return render(request,'student/login.html')
+def register(request):
+	if request.method == 'POST':
+		Fname = request.POST.get('fname')
+		Lname = request.POST.get('lname')
+		Username = request.POST.get('username')
+		Rollno = request.POST.get('rollnos')
+		Email = request.POST.get('email')
+		Password = request.POST.get('password')
+		# Cpassword = request.POST.get('cpassword')
+		Mobile = request.POST.get('mobile')
+		#print(Fname,Lname,Email)
+		return render(request,'student/details.html',{'Fname':Fname,'Lname':Lname,'Username':Username,'Rollno':Rollno,'Email':Email,'Password':Password,'Mobile':Mobile})
+	return render(request,'student/register.html')

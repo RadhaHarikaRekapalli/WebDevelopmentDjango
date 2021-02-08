@@ -1,0 +1,29 @@
+{% extends 'dtlapp/base.html' %}
+{% block title %}Register Page{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="card mt-3">
+		<div class="card-header bg-primary text-center">
+			<h5 style="color: white">Register Here</h5>
+			
+		</div>
+		<div class="card-body">
+			<form method="post">
+				{% csrf_token %}
+				
+				{{data.as_p}}
+				<input type="submit" name="Register">
+				
+			</form>
+				
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+	
+</div>
+{% endblock %}

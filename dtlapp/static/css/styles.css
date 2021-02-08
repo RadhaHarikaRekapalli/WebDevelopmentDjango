@@ -1,0 +1,18 @@
+h1{
+	color:red;
+	text-align:center;
+}
+body{
+	background-color:skyblue;
+}
+p{
+	text-align: center;background-color:pink;padding:20px;font-style:italic;
+	font-size: x-large;
+}
+.st{
+	text-align:center;color:blue;
+}
+
+#x{
+	color:green;
+}

@@ -1,0 +1,25 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/django.png' %}" style="width:40px"></a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'home' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'about' %}">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'dash' %}">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'login' %}" style="margin-left: 900px">Login</a>
+    </li>
+    
+  </ul>
+</nav>

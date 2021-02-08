@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loginpage</title>
+	<meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+     <script src="{% static  'js/bootstrap.min.js'%}"></script>
+     <script type= "text/jVscript" src="{% static 'jquery/jquery.min.js' %}"></script>
+</head>
+<body>
+	<div class="container col-md-5 mt-5">
+		<div class="card">
+			<form method="POST">
+				{% csrf_token %}
+				<div class="card-header bg-info text-white text-center">Register Page</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label>FirstName</label>
+						<input type="text" name="fname" placeholder="Enter FirstName" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>LastName</label>
+						<input type="text" name="lname" placeholder="Enter LastName" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Username</label>
+						<input type="text" name="username" placeholder="Enter username" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Roll Number</label>
+						<input type="text" name="rollnos" placeholder="Enter Roll Number" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Email</label>
+						<input type="email" name="email" placeholder="Enter Email Id" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" name="password" placeholder="Enter Password" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Confirm Password</label>
+						<input type="password" name="cpassword" placeholder="Enter confirm password" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Mobile</label>
+						<input type="number" name="mobile" placeholder="Enter mobile number" class="form-control" required>
+					</div>
+					<div>
+						<input type="submit" name="register" class="form-control bg-info text-white">
+					</div>
+					<!-- <div class="card-footer bg-info"> 
+						<button class="btn btn-secondary">Login</button>
+						
+					</div>-->
+				
+				</div>
+			</form>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>

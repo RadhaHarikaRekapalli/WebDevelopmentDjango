@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+     <script src="{% static  'js/bootstrap.min.js'%}"></script>
+     <script type= "text/jVscript" src="{% static 'jquery/jquery.min.js' %}"></script>
+     <style>
+       h2{
+        color:white;
+        background-color:blue;
+        padding:20px;
+        font-style:italic;
+        text-align:center;
+    }
+     </style>
+</head>
+<body bgcolor="skyblue">
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">CrudOperations</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+  	<li class="nav-item">
+      <a class="nav-link" href="{% url 'about' %}">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'addstudent' %}">Register</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'about' %}">Details</a>
+    </li>
+    <!-- <li class="nav-item"> 
+      <a class="nav-link" href="#">Link 3</a>
+    </li> -->
+  </ul>
+	</nav>
+  <h2>VIJAYA INSTITUTE OF TECHNOLOGY FOR WOMEN</h2>
+  
+
+
+  	</body>
+</html>
